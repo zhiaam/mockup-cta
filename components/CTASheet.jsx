@@ -1,6 +1,6 @@
 "use client";
 
-import Sheet from "./ui/sheet";
+import Sheet from "./ui/Sheet";
 
 const CTASheet = ({ open, onClose }) => {
   return (
