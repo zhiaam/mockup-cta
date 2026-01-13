@@ -17,7 +17,7 @@
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
     "midtrans-client": "^1.4.3",
-    "next": "15.1.7",
+    "next": "15.1.11",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
