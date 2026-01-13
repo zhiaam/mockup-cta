@@ -1,39 +1,21 @@
-import HeroCarousel from "@/components/HeroCarousel";
-import AboutSection from "@/components/AboutSection";
-import VisionMission from "@/components/VisionMission";
-import Gallery from "@/components/Gallery";
-import Services from "@/components/Services";
-import ContactSection from "@/components/ContactSection";
+import Hero from "@/components/Hero";
+import PricingSection from "@/components/PricingSection";
+import StickyCTA from "@/components/StickyCTA";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-24 md:pb-0">
       {/* Spacer untuk sticky header */}
       <div className="h-[72px]" />
 
-      <section id="home">
-        <HeroCarousel />
-      </section>
+      {/* HERO – CTA utama */}
+      <Hero />
 
-      <section id="about">
-        <AboutSection />
-      </section>
+      {/* PRICING – konversi */}
+      <PricingSection />
 
-      <section id="vision">
-        <VisionMission />
-      </section>
-
-      <section id="gallery">
-        <Gallery />
-      </section>
-
-      <section id="services">
-        <Services />
-      </section>
-
-      <section id="contact">
-        <ContactSection />
-      </section>
+      {/* STICKY CTA – mobile only */}
+      <StickyCTA />
     </main>
   );
 }

@@ -6,40 +6,37 @@ import "./globals.css";
 const dmSans = DM_Sans({
   variable: "--font-dmSans",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 const barlow = Barlow({
   variable: "--font-barlow",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 /* =========================
-   SEO METADATA (GLOBAL)
+   SEO METADATA (OPTIMIZED)
 ========================= */
 export const metadata = {
+  metadataBase: new URL("https://bennygroup.co.id"),
   title: {
-    default: "PT. Benny Group",
+    default: "Template Website Profesional | PT. Benny Group",
     template: "%s | PT. Benny Group",
   },
   description:
-    "PT. Benny Group adalah grup perusahaan Indonesia yang bergerak di berbagai sektor usaha dengan komitmen profesionalisme dan keberlanjutan.",
+    "Template website profesional langsung jadi untuk UMKM, personal brand, dan bisnis. Sekali bayar, tanpa langganan.",
   keywords: [
+    "Template Website",
+    "Website UMKM",
+    "Website Profesional",
     "PT Benny Group",
-    "Benny Group",
-    "Perusahaan Indonesia",
-    "Holding Company",
-    "Jasa Profesional",
+    "Jasa Website Indonesia",
   ],
-  authors: [{ name: "PT. Benny Group" }],
-  creator: "PT. Benny Group",
-  metadataBase: new URL("https://bennygroup.co.id"),
-
   openGraph: {
-    title: "PT. Benny Group",
+    title: "Template Website Profesional – PT. Benny Group",
     description:
-      "Grup perusahaan Indonesia dengan beragam lini usaha dan komitmen profesional.",
+      "Website profesional siap pakai. Tinggal edit konten, langsung online.",
     url: "https://bennygroup.co.id",
     siteName: "PT. Benny Group",
     images: [
@@ -47,18 +44,17 @@ export const metadata = {
         url: "/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PT. Benny Group",
+        alt: "Template Website PT. Benny Group",
       },
     ],
     locale: "id_ID",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "PT. Benny Group",
+    title: "Template Website Profesional – PT. Benny Group",
     description:
-      "Grup perusahaan Indonesia dengan beragam lini usaha dan komitmen profesional.",
+      "Website profesional siap pakai untuk UMKM & bisnis.",
     images: ["/assets/og-image.png"],
   },
 };
@@ -68,10 +64,17 @@ export default function RootLayout({ children }) {
     <html lang="id">
       <body className={`${dmSans.variable} ${barlow.variable} antialiased`}>
         <Header />
-        {children}
+
+        {/* LYNK / SCALEV WRAPPER */}
+        <div className="flex justify-center px-3 my-6">
+          <div className="premium-wrapper">
+            {children}
+          </div>
+        </div>
+
         <Footer />
 
-        {/* Structured Data (JSON-LD) */}
+        {/* STRUCTURED DATA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -81,17 +84,6 @@ export default function RootLayout({ children }) {
               name: "PT. Benny Group",
               url: "https://bennygroup.co.id",
               logo: "https://bennygroup.co.id/assets/logo.png",
-              sameAs: [
-                "https://facebook.com",
-                "https://instagram.com",
-                "https://linkedin.com",
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Jl. Contoh Raya No. 123",
-                addressLocality: "Jakarta",
-                addressCountry: "ID",
-              },
             }),
           }}
         />

@@ -11,28 +11,20 @@ export default {
       center: true,
       padding: "15px",
     },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "960px",
-      xl: "1200px",
-    },
     fontFamily: {
       primary: "var(--font-dmSans)",
       secondary: "var(--font-barlow)",
     },
     extend: {
       colors: {
-        primary: "#800000", // maroon
-        secondary: "#555555", // abu lembut untuk teks sekunder
-        accent: "#DC143C", // crimson
-        border: "#d7d7d7",
+        primary: "#0b0b0b",   // hitam premium
+        secondary: "#b5b5b5",
+        gold: "#d4af37",      // emas
+        accent: "#7a1f2b",    // maroon CTA
+        cream: "#f6f5f2",
       },
       boxShadow: {
-        custom: "0px 4px 54px 10px rgba(128, 0, 0, 0.06)",
-      },
-      backgroundImage: {
-        hero: "url('/assets/img/hero/bg.jpg')",
+        premium: "0 20px 60px rgba(0,0,0,0.4)",
       },
     },
   },

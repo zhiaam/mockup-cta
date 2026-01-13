@@ -1,5 +1,5 @@
 {
-  "name": "mockupCompanyS",
+  "name": "mockupCTA",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
+    "midtrans-client": "^1.4.3",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
@@ -23,6 +24,7 @@
     "react-icons": "^5.5.0",
     "react-medium-image-zoom": "^5.4.0",
     "react-scroll": "^1.9.3",
+    "resend": "^6.7.0",
     "swiper": "^11.2.4",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
